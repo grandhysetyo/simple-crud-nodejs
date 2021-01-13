@@ -9,7 +9,6 @@ const hbs = require('hbs');
 //use bodyParser middleware
 const bodyParser = require('body-parser');
 const conn = require('./db/conn.js');
-const { connect } = require('http2');
 const app = express();
 
 
@@ -36,6 +35,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Set folder public as static folder for static file
 const public_path = path.join(__dirname + '/public');
 app.use(express.static(public_path));
+
+const product = require('./src/router/product.js');
+app.use('/product',product);
 
 //route for homepage
 app.get('/',(req, res) => {
