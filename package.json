@@ -1,0 +1,26 @@
+{
+  "name": "simple-crud-nodejs",
+  "version": "1.0.0",
+  "description": "CRUD sederhana menggunakan Node JS dengan menggunakan template engine handlebars dan database MySQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grandhysetyo/simple-crud-nodejs.git"
+  },
+  "author": "Grandhys Setyo Utomo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grandhysetyo/simple-crud-nodejs/issues"
+  },
+  "homepage": "https://github.com/grandhysetyo/simple-crud-nodejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "mysql": "^2.18.1"
+  }
+}
